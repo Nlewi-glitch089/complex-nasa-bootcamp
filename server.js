@@ -6,7 +6,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const NASA_FACILITIES_URL = "https://data.nasa.gov/docs/legacy/gvk9-iz74.json";
 const TYPES = {
   ".html": "text/html",
